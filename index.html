@@ -22,8 +22,8 @@
 
   <body>
     <header class="header">
-      <!-- <div class="container header-container">
-        <nav class="header-container">
+      <div class="container header-container">
+        <nav class="logo-container">
           <a class="logo" href="./index.html"
             >Web<span class="logo-part">Studio</span></a
           >
@@ -49,15 +49,90 @@
             </li>
           </ul>
         </address>
-      </div> -->
+        <button type="button" class="header-menu-btn">
+          <svg class="header-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu">
+        <button type="button" class="menu-close-btn">
+          <svg class="menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <nav class="nav-menu-container">
+          <ul class="nav-menu-list">
+            <li class="nav-menu-item">
+              <a class="nav-menu-link menu-active" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="nav-menu-item">
+              <a class="nav-menu-link" href="">Portfolio</a>
+            </li>
+            <li class="nav-menu-item">
+              <a class="nav-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <address class="menu-address">
+            <ul class="menu-contacts-list">
+              <li class="menu-contacts-item">
+                <a class="menu-cont-link menu-active" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="menu-contacts-item">
+                <a class="menu-cont-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="menu-social-container">
+            <ul class="menu-social-list">
+              <li class="menu-social-items">
+                <a href="" class="menu-social-link">
+                  <svg class="menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-social-items">
+                <a href="" class="menu-social-link">
+                  <svg class="menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-social-items">
+                <a href="" class="menu-social-link">
+                  <svg class="menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-social-items">
+                <a href="" class="menu-social-link">
+                  <svg class="menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <!-- <section class="main-first section">
+      <section class="main-first section">
         <div class="container main-container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="main-first-btn" type="button">Order Service</button>
         </div>
-      </section> -->
+      </section>
       <section class="main-second section">
         <div class="container">
           <h2 class="visually-hidden">Hidden element</h2>
@@ -491,7 +566,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-icon" width="8" height="8">

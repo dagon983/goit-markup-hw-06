@@ -58,7 +58,7 @@ header {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-right: 76px;
+    /* margin-right: 76px; */
 }
 
 .logo-part {
@@ -121,7 +121,10 @@ header {
 .header-container {
     display: flex;
     align-items: center;
-    margin-right: auto;
+    /* margin-right: auto; */
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .nav-container {
@@ -136,10 +139,148 @@ header {
     gap: 40px;
 }
 
+.header-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.mob-menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;  
+    padding: 72px 24px 40px 16px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    overflow: auto;
+}
+
+.menu-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #E7E9FC;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close-icon {
+    fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close-btn:hover,
+.menu-close-btn:focus {
+    background-color:#404BBF;
+    border: none;
+}
+
+.menu-close-btn:hover .menu-close-icon,
+.menu-close-btn:focus .menu-close-icon {
+    fill: #ffffff;
+}
+
+.nav-menu-list {
+    margin-bottom: 50px;
+}
+
+.nav-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.nav-menu-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-active {
+    color: #404BBF;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link:focus,
+.menu-cont-link:hover,
+.menu-cont-link:focus,
+.menu-active:active {
+    color: #404BBF;
+}
+
+.menu-address {
+    margin-bottom: 48px;
+}
+
+.menu-contacts-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.menu-cont-link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-contacts-item .menu-active {
+    color: #404BBF;
+}
+
+.menu-social-list {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    width: 40px;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-icon {
+    fill: #ffffff;
+}
+
+.menu-social-link:hover,
+.menu-social-link:focus {
+    background-color: #404BBF;
+}
+
+
+
+
 .main-first {
     background-color: #2E2F42;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    /* padding-top: 188px;
+    padding-bottom: 188px; */
+    padding-top: 72px;
+    padding-bottom: 72px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
      url(../images/people-office.jpg);
     background-repeat: no-repeat;
@@ -149,13 +290,22 @@ header {
     max-width: 1440px;
 }
 
+/* .main-first .container {
+    padding-left: 52px;
+    padding-right: 52px;
+} */
+
 .main-title {
     text-align: center;
+    text-transform: capitalize;
     color: #FFFFFF;
-    font-size: 56px;
-    line-height: 1.07;
+    /* font-size: 56px; */
+    font-size: 36px;
+    /* line-height: 1.07; */
+    line-height: 1.11;
     letter-spacing: 0.02em;
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
+    margin-bottom: 72px;
     max-width: 496px;
     margin-left: auto;
     margin-right: auto;
@@ -165,6 +315,7 @@ header {
     background-color: #4D5AE5;
     color: #FFFFFF;
     font-weight: 500;
+    font-size: 16px;
     letter-spacing: 0.04em;
     line-height: 1.5;
     padding: 16px 32px;
@@ -765,7 +916,55 @@ header {
         max-width: 768px;
     }
 
+    .header-menu-btn {
+        display: none;
+    }
 
+    .nav-container, .contacts-container {
+        display: flex;
+    }
+    
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 120px;
+    }
+
+    .contacts-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .header-container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .cont-link {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+    }
+
+    
+
+    /* .main-first .container {
+        padding-left: 136px;
+        padding-right: 136px;
+    } */
+
+    .main-first {
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+
+    .main-title {
+        margin-bottom: 36px;
+        font-size: 56px;
+        line-height: 1.07;
+        text-transform: none;
+    }
 
 
     .second-list-table {
@@ -777,8 +976,8 @@ header {
     }
 
     .main-third .container {
-        padding-left: 108px;
-        padding-right: 108px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .third-list-table {
@@ -842,6 +1041,35 @@ header {
         max-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .logo-container {
+        gap: 76px;
+    }
+
+    .contacts-container {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .cont-link {
+        font-size: 16px;
+        line-height: 1.50;
+        letter-spacing: 0.02em;
+    }
+
+    .main-first .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main-first {
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    .main-title {
+        margin-bottom: 48px;
     }
     
     .second-list-table {
