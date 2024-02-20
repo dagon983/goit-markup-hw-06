@@ -143,6 +143,7 @@ header {
     background-color: transparent;
     border: none;
     padding: 0;
+    transition-duration: 250ms;
 }
 
 .mob-menu {
@@ -160,7 +161,6 @@ header {
     flex-direction: column;
     justify-content: space-between; 
     overflow: auto;
-    transition-duration: 250ms;
 }
 
 .menu-close-btn {
@@ -371,7 +371,7 @@ header {
     /* font-size: 20px; */
     /* font-weight: 500; */
     /* line-height: 1.2; */
-    font-style: 36px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -592,7 +592,6 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
-    margin-bottom: 72px;
 }
 
 .footer-social-text {
@@ -609,7 +608,6 @@ header {
     display: flex;
     gap: 16px;
     justify-content: center;
-    margin-bottom: 72px;
 }
 
 .footer-social-items {
@@ -624,6 +622,7 @@ header {
 .footer-social-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 72px;
 }
 
 .footer-max-container {
@@ -632,9 +631,9 @@ header {
     flex-direction: column;
 }
 
-/* .logo-text-container {
-    margin-right: 120px;
-} */
+.logo-text-container {
+    margin-bottom: 72px;
+} 
 
 .footer-social-link {
     width: 100%;
@@ -745,7 +744,8 @@ header {
     background-color: #FCFCFC;
     transform: translate(-50%, -50%);
     border-radius: 4px;
-    padding: 72px 24px 24px 24px;
+    /* padding: 72px 24px 24px 24px; */
+    padding: 72px 16px 24px 16px;
     box-shadow: 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F, 0px 2px 1px 0px #00000033;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -866,6 +866,9 @@ header {
 }
 
 .user-agreement-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -882,6 +885,7 @@ header {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    flex-shrink: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -926,6 +930,10 @@ header {
     .main-third .container {
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .mob-menu {
+        display: none;
     }
 
     .header-menu-btn {
@@ -979,7 +987,10 @@ header {
         font-size: 56px;
         line-height: 1.07;
     }
-
+         
+    .second-list-title {
+        text-align: left;
+    }
 
     .second-list-table {
         column-gap: 24px;
@@ -991,6 +1002,7 @@ header {
 
     .third-list-table {
         gap: 64px 24px;
+        justify-content: center;
     }
 
     .fourth-list-table {
@@ -1042,6 +1054,7 @@ header {
     .modal {
         width: 408px;
         min-height: 584px;
+        padding: 72px 24px 24px 24px;
     }
 }
 

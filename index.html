@@ -55,73 +55,75 @@
           </svg>
         </button>
       </div>
-      <div class="mob-menu">
-        <button type="button" class="menu-close-btn">
-          <svg class="menu-close-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-Vector"></use>
-          </svg>
-        </button>
-        <nav class="nav-menu-container">
-          <ul class="nav-menu-list">
-            <li class="nav-menu-item">
-              <a class="nav-menu-link menu-active" href="./index.html"
-                >Studio</a
-              >
-            </li>
-            <li class="nav-menu-item">
-              <a class="nav-menu-link" href="">Portfolio</a>
-            </li>
-            <li class="nav-menu-item">
-              <a class="nav-menu-link" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <div>
-          <address class="menu-address">
-            <ul class="menu-contacts-list">
-              <li class="menu-contacts-item">
-                <a class="menu-cont-link menu-active" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
+      <div class="mob-menu is-open">
+        <div class="container">
+          <button type="button" class="menu-close-btn">
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <nav class="nav-menu-container">
+            <ul class="nav-menu-list">
+              <li class="nav-menu-item">
+                <a class="nav-menu-link menu-active" href="./index.html"
+                  >Studio</a
                 >
               </li>
-              <li class="menu-contacts-item">
-                <a class="menu-cont-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="nav-menu-item">
+                <a class="nav-menu-link" href="">Portfolio</a>
+              </li>
+              <li class="nav-menu-item">
+                <a class="nav-menu-link" href="">Contacts</a>
               </li>
             </ul>
-          </address>
-          <div class="menu-social-container">
-            <ul class="menu-social-list">
-              <li class="menu-social-items">
-                <a href="" class="menu-social-link">
-                  <svg class="menu-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="menu-social-items">
-                <a href="" class="menu-social-link">
-                  <svg class="menu-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="menu-social-items">
-                <a href="" class="menu-social-link">
-                  <svg class="menu-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="menu-social-items">
-                <a href="" class="menu-social-link">
-                  <svg class="menu-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          </nav>
+          <div>
+            <address class="menu-address">
+              <ul class="menu-contacts-list">
+                <li class="menu-contacts-item">
+                  <a class="menu-cont-link menu-active" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="menu-contacts-item">
+                  <a class="menu-cont-link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="menu-social-container">
+              <ul class="menu-social-list">
+                <li class="menu-social-items">
+                  <a href="" class="menu-social-link">
+                    <svg class="menu-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu-social-items">
+                  <a href="" class="menu-social-link">
+                    <svg class="menu-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu-social-items">
+                  <a href="" class="menu-social-link">
+                    <svg class="menu-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu-social-items">
+                  <a href="" class="menu-social-link">
+                    <svg class="menu-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -191,7 +193,7 @@
       <section class="main-third section">
         <div class="container">
           <h2 class="third-title">Our Team</h2>
-          <ul class="main-third-list third-list-table">
+          <ul class="third-list-table">
             <li class="third-list-items">
               <img
                 class="third-list-img"
@@ -645,7 +647,6 @@
     </main>
     <footer class="footer">
       <div class="container footer-max-container">
-        <!-- <div class="info-social-container"> -->
         <div class="logo-text-container">
           <a class="logo-footer" href="./index.html"
             >Web<span class="logo-part">Studio</span></a
@@ -784,8 +785,10 @@
                   <use
                     href="./images/icons.svg#icon-checkmark"
                   ></use></svg></span
-              >I accept the terms and conditions of the&nbsp;
-              <a href="" class="label-link">Privacy Policy</a></label
+              ><span>
+                I accept the terms and conditions of the&nbsp;
+                <a href="" class="label-link">Privacy Policy</a>
+              </span></label
             >
           </div>
           <button type="submit" class="submit-btn">Send</button>
