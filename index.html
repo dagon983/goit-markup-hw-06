@@ -128,7 +128,7 @@
     </header>
     <main>
       <section class="main-first section">
-        <div class="container main-container">
+        <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="main-first-btn" type="button">Order Service</button>
         </div>
@@ -195,6 +195,7 @@
             <li class="third-list-items">
               <img
                 class="third-list-img"
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="Mark Product Designer"
                 width="264"
@@ -238,6 +239,7 @@
             <li class="third-list-items">
               <img
                 class="third-list-img"
+                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="Tom Frontend Developer"
                 width="264"
@@ -281,6 +283,7 @@
             <li class="third-list-items">
               <img
                 class="third-list-img"
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="Camila Marketing"
                 width="264"
@@ -324,6 +327,7 @@
             <li class="third-list-items">
               <img
                 class="third-list-img"
+                srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"
                 src="./images/img4.jpg"
                 alt="Daniel UI Designer"
                 width="264"
@@ -373,13 +377,36 @@
           <ul class="fourth-title-list fourth-list-table">
             <li class="fourth-list-items">
               <div class="img-container">
-                <img
-                  class="fourth-list-img"
-                  src="./images/sct2pic1.jpg"
-                  alt="Banking App"
-                  width="360"
-                  height="300"
-                />
+                <picture
+                  ><source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/sct2pic1.jpg    1x,
+                      ./images/sct2pic1-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/sct2pic1-tab.jpg    1x,
+                      ./images/sct2pic1-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/sct2pic1-mob.jpg    1x,
+                      ./images/sct2pic1-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="fourth-list-img"
+                    src="./images/sct2pic1.jpg"
+                    alt="Banking App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -394,13 +421,36 @@
             </li>
             <li class="fourth-list-items">
               <div class="img-container">
-                <img
-                  class="fourth-list-img"
-                  src="./images/sct2pic2.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                  height="300"
-                />
+                <picture
+                  ><source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/sct2pic2.jpg    1x,
+                      ./images/sct2pic2-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/sct2pic2-tab.jpg    1x,
+                      ./images/sct2pic2-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/sct2pic2-mob.jpg    1x,
+                      ./images/sct2pic2-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="fourth-list-img"
+                    src="./images/sct2pic2.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -415,13 +465,36 @@
             </li>
             <li class="fourth-list-items">
               <div class="img-container">
-                <img
-                  class="fourth-list-img"
-                  src="./images/sct2pic3.jpg"
-                  alt="Meditation App"
-                  width="360"
-                  height="300"
-                />
+                <picture
+                  ><source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/sct2pic3.jpg    1x,
+                      ./images/sct2pic3-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/sct2pic3-tab.jpg    1x,
+                      ./images/sct2pic3-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/sct2pic3-mob.jpg    1x,
+                      ./images/sct2pic3-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="fourth-list-img"
+                    src="./images/sct2pic3.jpg"
+                    alt="Meditation App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -436,13 +509,36 @@
             </li>
             <li class="fourth-list-items">
               <div class="img-container">
-                <img
-                  class="fourth-list-img"
-                  src="./images/sct2pic4.jpg"
-                  alt="Taxi Service"
-                  width="360"
-                  height="300"
-                />
+                <picture
+                  ><source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/sct2pic4.jpg    1x,
+                      ./images/sct2pic4-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/sct2pic4-tab.jpg    1x,
+                      ./images/sct2pic4-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/sct2pic4-mob.jpg    1x,
+                      ./images/sct2pic4-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="fourth-list-img"
+                    src="./images/sct2pic4.jpg"
+                    alt="Taxi Service"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -457,13 +553,36 @@
             </li>
             <li class="fourth-list-items">
               <div class="img-container">
-                <img
-                  class="fourth-list-img"
-                  src="./images/sct2pic5.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                  height="300"
-                />
+                <picture
+                  ><source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/sct2pic5.jpg    1x,
+                      ./images/sct2pic5-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/sct2pic5-tab.jpg    1x,
+                      ./images/sct2pic5-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/sct2pic5-mob.jpg    1x,
+                      ./images/sct2pic5-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="fourth-list-img"
+                    src="./images/sct2pic5.jpg"
+                    alt="Screen Illustrations"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -478,13 +597,37 @@
             </li>
             <li class="fourth-list-items">
               <div class="img-container">
-                <img
-                  class="fourth-list-img"
-                  src="./images/sct2pic6.jpg"
-                  alt="Online Courses"
-                  width="360"
-                  height="300"
-                />
+                <picture
+                  ><source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/sct2pic6.jpg    1x,
+                      ./images/sct2pic6-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/sct2pic6-tab.jpg    1x,
+                      ./images/sct2pic6-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/sct2pic6-mob.jpg    1x,
+                      ./images/sct2pic6-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="fourth-list-img"
+                    src="./images/sct2pic6.jpg"
+                    alt="Online Courses"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
