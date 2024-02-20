@@ -160,6 +160,7 @@ header {
     flex-direction: column;
     justify-content: space-between; 
     overflow: auto;
+    transition-duration: 250ms;
 }
 
 .menu-close-btn {
